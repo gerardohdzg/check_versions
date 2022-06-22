@@ -12,7 +12,7 @@ jobs:
       - name: List project files and java version
         run: |
               ls -ltr
-              java-version
+              java -version
         
     
 
