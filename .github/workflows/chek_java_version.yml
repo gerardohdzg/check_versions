@@ -3,8 +3,7 @@ name: check_java_version
 on: [push]
 
 jobs:
-
-  build:
+  javaVersion:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout respository
@@ -13,6 +12,9 @@ jobs:
         run: |
               ls -ltr
               java -version
+      - name: Checks if node is installed
+        run: node -v
+      
         
     
 
